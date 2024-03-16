@@ -1,0 +1,151 @@
+@font-face {
+  font-family: PPmondwest;
+  src: url(fonts/PPmondwest.ttf);
+}
+
+@font-face {
+  font-family: martianMono;
+  src: url(fonts/martianMono.ttf);
+}
+
+body{
+    background-color: #b8f6cd;
+    font-family: martianMono;
+}
+header{
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    padding: 50px;
+    background: url(bgd-img.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+header h1{
+  font-size: 275px;
+  font-family: PPmondwest;
+}
+header button{
+  background-color: #000;
+  color: white;
+  height: 30px;
+  
+}
+header button:hover,
+header button:focus{
+  background-color: #b8f6cd;
+  color: #000;
+  border: 1px solid black;
+  cursor: pointer;
+}
+main{
+    margin: 50px;
+    padding: 50px;
+    
+}
+.maze{
+    /* background-color: red; */
+    border: 1px solid black;
+    display: flex;
+    height: 632px;
+    width: 632px;
+}
+/* .columns{
+    background-color: blue;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+#c1{
+    background-color: green;
+} */
+.rows{
+    /* background-color: white; */
+    border: 1px solid rgb(193, 193, 193);
+    height: 30px;
+    width: 30px;
+}
+
+.rows:hover{
+    background-color: #9fceaf;
+}
+
+/* The Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #b8f6cd;
+    margin: 15% auto;
+    padding: 50px;
+    border: 4px solid #646464;
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  /* Close Button */
+  .close {
+    color: #646464;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Retry Button */
+  #retryButton {
+    margin-top: 20px;
+    border: #646464 solid 2px;
+    border-radius: 35px;
+    /* float: right; */
+    background-color: #99cdaa;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  
+  #retryButton:hover,
+  #retryButton:focus {
+    color: #b8f6cd;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #000;
+  }
+
+  footer{
+    background-color: #000;
+    color: white;
+    border-radius: 25px;
+    padding: 30px;
+  }
+
+  footer div{
+    padding: 20px;
+  }
+
+  p{
+    font-family: martianMono;
+  }
+
+  button{
+    font-family: martianMono;
+  }
